@@ -1,0 +1,44 @@
+body {
+    background: rgb(58, 58, 58);
+    color: white;
+    font-family: helvetica neue, helvetica, arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: red;
+    font-size:100px;
+    margin: 20px;
+}
+header {
+    margin: 0px;
+    padding: 50px;
+    font-size: 100px;
+}
+span {
+    font-size:50px;
+}
+.test {
+    background-color: red;
+    background-image:url ('SILAKAN.png');
+}
+section {
+    background: white;
+    margin:10px;
+    color: gray;
+    font-size:50px;
+}
+footer {
+    margin: 0px 10px;
+}
+button {
+    margin: 10px;
+    size:30px;
+    width: 150px;
+    height: 50px;
+    font-size:20px;
+    cursor:pointer;
+}
+button:hover {
+    background-color:aqua;
+}
