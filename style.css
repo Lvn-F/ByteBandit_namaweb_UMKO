@@ -1,44 +1,132 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
 body {
-    background: rgb(58, 58, 58);
+    background: rgb(220, 255, 92);
     color: white;
     font-family: helvetica neue, helvetica, arial, sans-serif;
     margin: 0px;
     padding: 0px;
+    justify-content: center;
+    align-items: center;
 }
 h1 {
-    color: red;
+    color: rgb(255, 209, 71);
+    background-color: rgb(0, 79, 199);
     font-size:100px;
-    margin: 20px;
+    margin: 0px;
+    border:0px;
+    padding:25px;
+    text-align: center;
 }
 header {
     margin: 0px;
-    padding: 50px;
-    font-size: 100px;
+    padding: 0px;
+    font-size: 25px;
 }
-span {
-    font-size:50px;
+.menu-container {
+    position:fixed;
+    top: 20px;
+    left:20px;
+    z-index: 1000;
 }
-.test {
-    background-color: red;
-    background-image:url ('SILAKAN.png');
+.navigationmenu {
+    width: 30px;
+    height:22px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
 }
-section {
-    background: white;
-    margin:10px;
-    color: gray;
-    font-size:50px;
+.navigationmenu span {
+    height:4px;
+    width:25px;
+    background-color: rgb(255, 209, 71);
+    border-radius: 2px;
+    transition: 0,5s;
+}
+.navigationmenu:hover span {
+    background-color:rgb(141, 115, 39);
+}
+.navigationmenu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px,5px)
+}
+.navigationmenu.active span:nth-child(2) {
+    opacity:0;
+}
+.navigationmenu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.container1 h1 {
+    background-color: rgb(220, 255, 92);
+    color:rgb(0, 32, 62);
+    text-align: center;
+}
+.container1 {
+    padding: 0px;
+}
+.teks1 {
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:100px;
+    color: rgb(0, 32, 62)
+}
+.kotakContainer {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px;
+}
+.kotak {
+    background-color:rgb(0, 32, 62);
+    color: rgb(220, 255, 92);
+    border-radius:25px;
+    padding:20px;
+    width:200px;
+    box-sizing: border-box;;
+}
+.square {
+    background-color: rgb(220, 255, 92);
+    width:50px;
+    height:50px;
+    margin:0 auto 20px;
+}
+.kotak h2 {
+    font-size:18px;
+    color:white;
+    margin-bottom:10px;
+}
+.kotak p {
+    font-size: 14px;
+    line-height:1.4;;
+}
+
+button {
+    position: relative;
+    width:150px;
+    height: 50px;
+    padding: 0;
+    cursor:pointer;
+    background:white;
+    color:gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size:1em;
+    font-style:helvetica neue;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+button:hover {
+    background: rgb(125, 249, 225);
+    color:black;
+    letter-spacing: 3px;
+    
 }
 footer {
     margin: 0px 10px;
-}
-button {
-    margin: 10px;
-    size:30px;
-    width: 150px;
-    height: 50px;
-    font-size:20px;
-    cursor:pointer;
-}
-button:hover {
-    background-color:aqua;
 }
