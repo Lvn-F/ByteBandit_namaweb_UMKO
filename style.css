@@ -4,9 +4,9 @@
     box-sizing:border-box;
 }
 body {
-    background: rgb(220, 255, 92);
+    background: rgb(255, 239, 67);
     color: white;
-    font-family: helvetica neue, helvetica, arial, sans-serif;
+    font-family: helvetica, arial, sans-serif;
     margin: 0px;
     padding: 0px;
     justify-content: center;
@@ -14,18 +14,29 @@ body {
 }
 h1 {
     color: rgb(255, 209, 71);
-    background-color: rgb(0, 79, 199);
-    font-size:100px;
+    background-color: rgb(0, 32, 80);
+    font-size:50px;
     margin: 0px;
     border:0px;
     padding:25px;
     text-align: center;
 }
+#headerText {
+    color: rgb(255, 209, 71);
+    background-color: rgb(0, 32, 80);
+    font-size:50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
 header {
     margin: 0px;
     padding: 0px;
     font-size: 25px;
 }
+
+/*header section*/
+
 .menu-container {
     position:fixed;
     top: 20px;
@@ -59,14 +70,51 @@ header {
 .navigationmenu.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
 }
+.navbarCont {
+    position:fixed;
+    top:0px;
+    z-index:950;
+}
+.navbar {
+    display:flex;
+    height:60px;
+    width:10000px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.navbar section {
+    height:60px;
+    width:10000px;
+    background-color: rgb(0, 32, 80);
+}
+.buttonContainer {
+    position:fixed;
+    top:15px;
+    right:20px;
+    z-index:1000;
+    display:flex;
+}
+.buttonContainer span {
+    font-size: 10px;
+    
+}
+.buttonContainer button {
+    height: 35px;
+    width: 85px;
+    color:black;
+    background-color: rgb(255, 169, 32);
+}
+/**/
 
-.container1 h1 {
-    background-color: rgb(220, 255, 92);
+.kuning1 h1 {
+    background-color: rgb(255, 239, 67);
     color:rgb(0, 32, 62);
     text-align: center;
 }
-.container1 {
-    padding: 0px;
+
+.kuning1 {
+    padding: 40px 20px;
 }
 .teks1 {
     font-size:15px;
@@ -74,34 +122,106 @@ header {
     margin-bottom:100px;
     color: rgb(0, 32, 62)
 }
-.kotakContainer {
+.kotakContainer1 {
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     gap:20px;
 }
-.kotak {
+.kotak1 {
     background-color:rgb(0, 32, 62);
-    color: rgb(220, 255, 92);
+    color: rgb(255, 239, 67);
     border-radius:25px;
     padding:20px;
     width:200px;
     box-sizing: border-box;;
 }
 .square {
-    background-color: rgb(220, 255, 92);
+    background-color: rgb(255, 239, 67);
     width:50px;
     height:50px;
     margin:0 auto 20px;
 }
-.kotak h2 {
+.kotak1 h2 {
     font-size:18px;
     color:white;
     margin-bottom:10px;
 }
-.kotak p {
+.kotak1 p {
     font-size: 14px;
     line-height:1.4;;
+}
+
+/**/
+
+.putih1 {
+    background-color: rgb(255,255,255);
+    text-align: center;
+    padding:40px 20px;
+}
+.bulatContainer2 {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.bulat {
+    background-color: transparent;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+}
+.bulat h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.bulat p {
+    font-size: 13px;
+    color: rgb(0, 32, 80)
+}
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 169, 32);
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+/**/
+
+.kuning2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    padding: 40px;
+}
+.kuning2 .text2 {
+    flex:1;
+    margin-right:20px;
+}
+#textYellowSection1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:black;
+}
+.kuning2 .text2 p {
+    font-size: 14px;
+    line-height: 1.6;
+    color:black;
+}
+.photo {
+  background-color: #999;
+  color: white;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 button {
@@ -116,13 +236,13 @@ button {
     text-transform: uppercase;
     font-weight: 500;
     font-size:1em;
-    font-style:helvetica neue;
+    font-style:helvetica;
     letter-spacing: 2px;
     transition: 0.5s;
     border-radius: 10px;
 }
 button:hover {
-    background: rgb(125, 249, 225);
+    background: rgb(255, 251, 144);
     color:black;
     letter-spacing: 3px;
     

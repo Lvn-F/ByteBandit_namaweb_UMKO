@@ -1,6 +1,3 @@
-document.getElementById("test").addEventListener("click", function() {
-    alert("bfabfbawkbfeabfwjhfbwh");
-});
 
 document.addEventListener('DOMContentLoaded', () => {
     const navigation = document.getElementById('navigationmenu');
